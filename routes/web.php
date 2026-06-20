@@ -11,7 +11,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'LARAVEL HIDUP 🚀';
+    return view('home'); // atau ke halaman landing page/login proyek Anda
 });
 
 Route::get('/products', [ProductsController::class, 'index'])->name('products.index');
