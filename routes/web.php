@@ -27,7 +27,7 @@ Route::delete('/cart/remove/{id}', [CartController::class, 'remove'])->name('car
 
 
 
-Route::post('/process-order', [CheckoutController::class, 'store'])->name('order.store');
+Route::post('/process-order', [CheckoutController::class, 'store'])->name('checkout.store');
 
 Route::get('/order-summary', [CheckoutController::class, 'summary'])->name('order.summary');
 Route::post('/order/store', [OrdersController::class, 'store'])->name('order.store')->middleware('auth');
