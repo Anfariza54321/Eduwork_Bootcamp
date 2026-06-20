@@ -11,8 +11,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('frontend.home');
-})->name('home');
+    return 'LARAVEL HIDUP 🚀';
+});
 
 Route::get('/products', [ProductsController::class, 'index'])->name('products.index');
 Route::get('/products/{slug}', [ProductsController::class, 'show'])->name('products.show');
